@@ -1,0 +1,100 @@
+.App {
+  display: flexbox;
+  font-family: sans-serif;
+  text-align: center;
+  position: absolute;
+}
+body {
+  background: #160335;
+  color: white;
+}
+/* h1 {
+  margin: auto;
+  text-align: center;
+
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 29px;
+
+  color: #ffffff;
+}
+
+h2 {
+  font-size: 48px;
+} */
+
+.wrapper {
+  display: flex;
+  flex-flow: row wrap;
+  font-weight: bold;
+  text-align: center;
+}
+
+.wrapper > * {
+  padding: 10px;
+  flex: 1 100%;
+}
+
+.header {
+  font-size: 60px;
+  background: #160335;
+  text-shadow: 5px 5px 5px fuchsia;
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+}
+
+.footer {
+  position: sticky;
+  bottom: 0;
+  background: #160335;
+  font-size: 16px;
+  color: blueviolet;
+}
+
+.main {
+  text-align: left;
+  background: #160335;
+}
+
+.aside-1 {
+  background: #160335;
+  color: #160335;
+}
+
+.aside-2 {
+  background: #160335;
+}
+
+@media all and (min-width: 600px) {
+  .aside {
+    flex: 1 0 0;
+  }
+}
+
+@media all and (min-width: 800px) {
+  .main {
+    flex: 3 0px;
+  }
+  .aside-1 {
+    order: 1;
+  }
+  .main {
+    order: 2;
+  }
+  .aside-2 {
+    order: 3;
+  }
+  .footer {
+    order: 4;
+  }
+}
+
+body {
+  padding: 2em;
+}
+
+img {
+  background-size: padding;
+}
